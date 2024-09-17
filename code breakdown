@@ -1,0 +1,23 @@
+Code Breakdown:
+Loading the Dataset:
+
+Load your dataset using pd.read_csv() and specify your file path.
+Univariate and Bivariate Analysis:
+
+univariate_analysis(): This function plots the distribution of a single feature.
+bivariate_analysis(): This function plots the relationship between two features.
+Train-Test Split:
+
+train_test_split() is used to split the dataset into training and testing sets for both classification and regression tasks.
+Random Forest Classifier:
+
+Trained using RandomForestClassifier(), then we evaluate using accuracy and classification report.
+The model is saved using pickle.
+Random Forest Regressor:
+
+Trained using RandomForestRegressor(), evaluated using mean squared error.
+The model is also saved using pickle.
+Loading the Model and Passing New Input:
+
+The saved .pkl files are loaded using pickle.load() and then used for predictions with a new input.
+Make sure to replace feature1, feature2, feature3, target_class, and target_regression with the actual column names from your dataset.
